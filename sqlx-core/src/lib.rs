@@ -60,8 +60,8 @@ pub use query::{query, Query};
 //#[doc(hidden)]
 //pub use query_as::query_as_mapped;
 
-//#[doc(inline)]
-//pub use pool::Pool;
+#[doc(inline)]
+pub use pool::Pool;
 
 //#[doc(inline)]
 //pub use row::{FromRow, Row};

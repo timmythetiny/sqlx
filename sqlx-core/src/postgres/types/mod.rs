@@ -1,14 +1,14 @@
 mod bool;
-mod bytes;
-mod float;
-mod int;
-mod str;
-
-#[cfg(feature = "chrono")]
-mod chrono;
-
-#[cfg(feature = "uuid")]
-mod uuid;
+//mod bytes;
+//mod float;
+//mod int;
+//mod str;
+//
+//#[cfg(feature = "chrono")]
+//mod chrono;
+//
+//#[cfg(feature = "uuid")]
+//mod uuid;
 
 use std::fmt::{self, Debug, Display};
 
@@ -36,7 +36,6 @@ impl PgTypeInfo {
 
 impl Display for PgTypeInfo {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        // TODO: Should we attempt to render the type *name* here?
         write!(f, "{}", self.id.0)
     }
 }
